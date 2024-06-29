@@ -4,3 +4,6 @@
 
 通过以下命令可以关闭安全认证方式：
 sudo gsettings set org.gnome.Vino require-encryption false
+
+具体情况可以参考该博主
+https://blog.csdn.net/chan1987818/article/details/126934283
