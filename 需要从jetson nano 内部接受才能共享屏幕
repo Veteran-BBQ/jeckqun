@@ -1,0 +1,18 @@
+首先输入以下命令：
+cd  
+sudo gedit ~/openvino
+将以下内容粘贴到打开的文件中进去，然后保存并关闭：
+#!/bin/bash
+export DISPLAY=:0
+gsettings set org.gnome.Vino enabled true
+gsettings set org.gnome.Vino prompt-enabled false
+gsettings set org.gnome.Vino require-encryption false
+xrandr --fb 1280x720
+/usr/lib/vino/vino-server &
+打包成一个可执行的文件，执行下面的命令修改文件权限：
+sudo chmod +x ~/openvino
+通过下面这一条命令启动vnc服务：
+~/openvino
+再次共享屏幕就可以了
+
+详情配置vnc请见此网站：https://blog.csdn.net/weixin_44350337/article/details/111480295
